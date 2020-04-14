@@ -1,5 +1,7 @@
 # 对接 xray 和微信实现自动告警
 
+!> 本文的代码写法随着 xray 和第三方服务的升级改进会逐渐失效，请仅参考思路。在 xray Github 仓库 webhook_demo 目录中有最新的实现代码。
+
 ## xray 是什么
 xray 是从长亭洞鉴核心引擎中提取出的社区版漏洞扫描神器，支持主动、被动多种扫描方式，自备盲打平台、可以灵活定义 POC，功能丰富，调用简单，支持 Windows / macOS / Linux 多种操作系统，可以满足广大安全从业者的自动化 Web 漏洞探测需求。
 
@@ -55,7 +57,7 @@ if __name__ == '__main__':
 127.0.0.1 - - [27/Aug/2019 00:17:36] "POST /webhook HTTP/1.1" 200 -
 ```
 
-接下来就是解析 xray 的漏洞信息，然后生成对应的页面模板就好了。需要参考[文档](/guide/vuln)。因为推送不适合发送太大的数据量，所以就选择了基础的一些字段。
+接下来就是解析 xray 的漏洞信息，然后生成对应的页面模板就好了。需要参考[文档](/api/vuln)。因为推送不适合发送太大的数据量，所以就选择了基础的一些字段。
 
 ```python
 from flask import Flask, request
@@ -67,6 +69,9 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def xray_webhook():
     vuln = request.json
+    # 因为还会收到 https://chaitin.github.io/xray/#/api/statistic 的数据
+    if "vuln_class" not in vuln:
+        return "ok"
     content = """## xray 发现了新漏洞
     
 url: {url}
@@ -126,6 +131,9 @@ def push_ftqq(content):
 @app.route('/webhook', methods=['POST'])
 def xray_webhook():
     vuln = request.json
+    # 因为还会收到 https://chaitin.github.io/xray/#/api/statistic 的数据
+    if "vuln_class" not in vuln:
+        return "ok"
     content = """## xray 发现了新漏洞
     
 url: {url}

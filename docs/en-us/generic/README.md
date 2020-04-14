@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> A powerful security assessment tool  🏠[Homepage](https://chaitin.github.io/xray/#/)  ⬇️[Download](https://github.com/chaitin/xray/releases) 📚[Chinese document](https://github.com/chaitin/xray)
+> A powerful security assessment tool  🏠[Homepage](https://xray.cool)  ⬇️[Download](https://github.com/chaitin/xray/releases) 📚[Chinese document](https://github.com/chaitin/xray)
 
 ### ✨ Demo
 
@@ -129,7 +129,7 @@ We are working hard for new detection modules
 
 ## ⚡️ Advanced usage
 
-For the below advanced usage, please refer to [http://chaitin.github.io/xray/](http://chaitin.github.io/xray/) .
+For the below advanced usage, please refer to [https://chaitin.github.io/xray/](https://chaitin.github.io/xray/) .
 
  - modify config file
  - generate ssl ca certificate

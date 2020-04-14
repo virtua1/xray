@@ -3,6 +3,7 @@
   - [下载运行](tutorial/prepare.md)
   - [代理模式进行扫描](tutorial/webscan_proxy.md)
   - [基础爬虫模式进行扫描](tutorial/webscan_basic_crawler.md)
+  - [服务扫描](tutorial/service_scan.md)
 - 配置
   - [命令详解](configration/cli.md)
   - [配置文件](configration/config.md)
@@ -16,10 +17,12 @@
 - 高级用法
   - [自定义POC语法](guide/poc.md)
   - [编写高质量poc](guide/high_quality_poc.md)
+  - [优化扫描速度](guide/speed.md)
 - 使用场景
   - [有奖征文](scenario/intro.md)
   - [与 Burp 联动](scenario/burp.md)
   - [与 awvs 联动](scenario/awvs.md)
+  - [与 crawlergo 联动](https://github.com/timwhitez/crawlergo_x_XRAY)
   - [使用反连平台挖掘和验证 SSRF](scenario/reverse_server_ssrf.md)
   - [对接微信/企业微信实现自动告警](scenario/xray_vuln_alert.md)
 
@@ -27,7 +30,7 @@
   - [说明](api/api.md)
   - [漏洞格式](api/vuln.md)
   - [统计格式](api/statistic.md)
-
+- [技术分享](share/share.md)
 - [贡献POC](guide/contribute.md)
 - [奖励措施](guide/rewards.md)
 - [产品版本区别](generic/compare.md)

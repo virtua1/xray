@@ -14,7 +14,9 @@
 
 ![](https://chaitin.github.io/xray/assets/term.svg)
 
-🏠[使用文档](https://chaitin.github.io/xray/#/)  ⬇️[下载地址](https://github.com/chaitin/xray/releases) 📚[English Document](https://github.com/chaitin/xray/tree/master/docs/en-us/generic)
+🏠[使用文档](https://xray.cool)  ⬇️[下载地址](https://github.com/chaitin/xray/releases) 📚[English Document](https://github.com/chaitin/xray/tree/master/docs/en-us/generic)
+
+注意：xray 不开源，直接下载构建的二进制文件即可，仓库内主要为社区贡献的 poc，每次 xray 发布将自动打包。
 
 ## 🚀 快速使用
 
@@ -137,7 +139,7 @@
 
 ## ⚡️ 进阶使用
 
-下列高级用法请查看 [http://chaitin.github.io/xray/](http://chaitin.github.io/xray/) 使用。
+下列高级用法请查看 [https://chaitin.github.io/xray/](https://chaitin.github.io/xray/) 使用。
 
  - 修改配置文件
  - 抓取 https 流量

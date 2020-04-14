@@ -13,7 +13,7 @@ xray 社区版经过数个版本的更迭，基本覆盖了对常见漏洞的 fu
 
 ## POC 贡献规范
 
-在提交之前请搜索仓库的 pocs 文件夹以及 Github 的 Pull request, 确保该 POC 没有被提交。
+在提交之前请搜索仓库的 pocs 文件夹以及 Github 的 Pull request, 确保该 POC 没有被提交，而且不包含在部分扫描插件中（目前指 thinkPHP 和 struts 插件）。
 
 1. 认真阅读 [如何编写高质量poc](guide/high_quality_poc.md) 文档
 1. 期望近三年内主流框架，CMS等出现的漏洞，部分小众 CMS 的 POC 可能不被收录
@@ -30,10 +30,10 @@ xray 社区版经过数个版本的更迭，基本覆盖了对常见漏洞的 fu
 
 在 Github 提交 Pull request 后，会有travis-ci自动进行POC的格式检查，对于没有通过的检查，可以通过点击详情查看具体的错误原因：
 
-![](../assets/contribute/fail-detail.png)
+![](../assets/contribute/fail-detail.jpg)
 
 待修复完成并重新提交达到下面的样子就会被人工审核了。
 
-![](../assets/contribute/pr.png)
+![](../assets/contribute/pr.jpg)
 
 
